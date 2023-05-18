@@ -13,7 +13,7 @@ This Python script allows you to automatically download videos from TikTok using
 
 1. Make sure you have all the prerequisites installed.
 2. Clone this repository or download the Python script.
-3. Open the script and replace `'/Users/sihao/Downloads'` with the actual path to your downloads directory.
+3. Open the script and replace `'Path'` with the actual path to your downloads directory.
 4. Replace `'https://www.tiktok.com/@enabunnyz'` with the URL of the TikTok profile you want to download videos from.
 5. Run the script. 
 
