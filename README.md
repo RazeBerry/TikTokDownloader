@@ -1,6 +1,6 @@
 # TikTok Video Downloader
 
-This Python script allows you to automatically download videos from TikTok using Selenium WebDriver. The script first navigates to a TikTok profile page and scrolls through the page to collect all the video URLs. Then, it visits each URL through Snaptik.app and downloads the video.
+This Python script allows you to automatically download videos from TikTok using Selenium WebDriver. The script first navigates to a TikTok profile page and scrolls through the page to collect all the video URLs. Then, it visits each URL through Snaptik.app and downloads the video. This script was tested on MacBook Pro with Apple Silicon and Python 3.11.2.
 
 ## Prerequisites
 
