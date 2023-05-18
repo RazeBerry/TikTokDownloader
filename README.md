@@ -29,6 +29,9 @@ At the end, the script prints the URLs of the videos that were successfully down
 
 ## Known Issues and Limitations
 
+- The artificial scrolling feature is bugged and is known to only have very limited scrolling abilities and therefore can't collect all the urls from a user.
+- The script is painfully slow as it is single-threaded.
+- It is a known error some videos may have 0kb file size.
 - The script may fail to download a video if a timeout error occurs or if Snaptik.app fails to start the download. In such cases, the script will skip the current video and proceed to the next one.
 - The script assumes that Firefox's default download directory is used. If your downloads directory is different, you need to update the `download_dir` variable in the script.
 
