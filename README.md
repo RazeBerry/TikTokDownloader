@@ -9,13 +9,53 @@ This Python script allows you to automatically download videos from TikTok using
 - Firefox Browser
 - geckodriver
 
+
+## Installation
+
+1. Clone this repository:
+
+    ```
+    git clone https://github.com/yourusername/TikTokDownloader.git
+    ```
+
+2. Navigate to the cloned directory:
+
+    ```
+    cd TikTokDownloader
+    ```
+
+3. Install the required Python packages:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+
 ## Usage
 
-1. Make sure you have all the prerequisites installed.
-2. Clone this repository or download the Python script.
-3. Open the script and replace `'Path'` with the actual path to your downloads directory.
-4. Replace `'https://www.tiktok.com/@enabunnyz'` with the URL of the TikTok profile you want to download videos from.
-5. Run the script. 
+1. Open the `TikTokDownloader.py` script in a text editor.
+
+2. Modify the following variables according to your needs:
+
+    - `adblock_path`: Set this to the path of your downloaded Adblock Plus `.xpi` file.
+    
+    - `download_dir`: Set this to the path where you want the downloaded videos to be saved.
+
+    - `tiktok_url`: Set this to the TikTok profile URL from which you want to download videos.
+
+3. Run the script:
+
+    ```
+    python TikTokDownloader.py
+    ```
+
+The script will launch a Firefox window, navigate to the specified TikTok profile, and start downloading videos. Downloaded videos will be saved to the specified download directory.
+
+## Notes
+
+- The script will automatically dismiss any pop-up ads that appear during the download process.
+- If a video download fails, the script will retry the download at the end of the process.
+- If a video is still a photo rather than a video, the script will attempt to download it as a photo.
 
 ## How It Works
 
@@ -29,10 +69,10 @@ At the end, the script prints the URLs of the videos that were successfully down
 
 ## Known Issues and Limitations
 
-- The artificial scrolling feature is bugged and is known to only have very limited scrolling abilities and therefore can't collect all the urls from a user.
-- The script is painfully slow as it is single-threaded.
-- It is a known error some videos may have 0kb file size.
+- The script is painfully slow as it is single-threaded among many other things and underoptimized. There are no motivations to optimize them as we may see ratelimits. 
+- It is a known error some videos may have 0kb file size. I don't know the cause of it. 
 - The script may fail to download a video if a timeout error occurs or if Snaptik.app fails to start the download. In such cases, the script will skip the current video and proceed to the next one.
+- The sceipt will sometimes repeat downloading tiktok videos posted as images but it won't be stuck in a loop.
 - The script assumes that Firefox's default download directory is used. If your downloads directory is different, you need to update the `download_dir` variable in the script.
 
 ## Disclaimer
