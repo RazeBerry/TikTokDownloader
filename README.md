@@ -37,7 +37,7 @@ This Python script allows you to automatically download videos from TikTok using
 
 2. Modify the following variables according to your needs:
 
-    - `adblock_path`: Set this to the path of your downloaded Adblock Plus `.xpi` file.
+    - `adblock_path`: Set this to the path of your downloaded Adblock Plus `.xpi` file. The `.xpi` file is included as part of the repository for your convenience.
     
     - `download_dir`: Set this to the path where you want the downloaded videos to be saved.
 
