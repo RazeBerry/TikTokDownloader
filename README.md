@@ -15,7 +15,7 @@ This Python script allows you to automatically download videos from TikTok using
 1. Clone this repository:
 
     ```
-    git clone https://github.com/yourusername/TikTokDownloader.git
+    git clone https://github.com/RazeBerry/TikTokDownloader.git
     ```
 
 2. Navigate to the cloned directory:
