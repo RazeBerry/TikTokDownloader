@@ -57,7 +57,7 @@ The script will launch a Firefox window, navigate to the specified TikTok profil
 - If a video download fails, the script will retry the download at the end of the process.
 - If a video is still a photo rather than a video, the script will attempt to download it as a photo.
 - This script allows multiple instances to be ran at the same time! Aka open multiple command prompts and they would be able to run simultaneously without issues prohibiting rate limits. 
-- The script can possibly work with headless mode with Selenium but for debugging purposes I have left it on if you want to modify it such that it runs on headless mode change the relevant header section into: (do note that this is not tested to work as I had some difficulty getting both addon and headless mode to work simultaneously)
+- The script can work with headless mode with Selenium but for debugging purposes I have left it on if you want to modify it such that it runs on headless mode change the relevant header section into: (do note that this is not guaranteed to work on every machine as I had some difficulty getting both addon and headless mode to work simultaneously)
 ```
 # Create a new instance of Firefox Options
 options = Options()
